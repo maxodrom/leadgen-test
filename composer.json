@@ -1,0 +1,15 @@
+{
+  "name": "maxodrom/leadgen-test",
+  "description": "description",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Mxdr",
+      "email": "max@7u3.ru"
+    }
+  ],
+  "require": {
+    "vladimir163/lead-generator": "dev-master"
+  }
+}
