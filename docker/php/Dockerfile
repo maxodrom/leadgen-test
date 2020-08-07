@@ -18,9 +18,5 @@ COPY ./php.ini /usr/local/etc/php/
 COPY ./php-fpm.conf /usr/local/etc/php-fpm.conf
 COPY ./docker-php-entrypoint /usr/local/bin/
 
-# устанавливаем composer в контейнер
-RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin
-CMD bash -c "composer install"
-
 ENTRYPOINT ["docker-php-entrypoint"]
 CMD ["php-fpm"]

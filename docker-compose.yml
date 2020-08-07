@@ -24,6 +24,12 @@ services:
     networks:
       - project
 
+  composer:
+    image: library/composer:latest
+    command: ["composer", "install"]
+    volumes:
+      - ./:/app
+
 networks:
   project:
     driver: bridge
