@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
         zip unzip \
         --no-install-recommends
 
-# Устанавливаем vim и git
+# Устанавливаем git
 RUN apt-get update && apt-get install -y \
     git-core
 

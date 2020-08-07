@@ -5,4 +5,4 @@ require_once '../vendor/autoload.php';
 use LeadGenerator\Generator;
 
 $generator = new Generator();
-$generator->generateLeads(100, '\maxodrom\leadgentest\Handler::processLead');
+$generator->generateLeads(10000, '\maxodrom\leadgentest\Handler::processLead');
