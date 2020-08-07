@@ -43,8 +43,9 @@ class Handler
      */
     private static function init()
     {
+        $appRoot = dirname(__DIR__);
         if (self::$logFile === null) {
-            self::$logFile = __DIR__ . '/../log.txt';
+            self::$logFile = $appRoot . '/www/log.txt';
         }
         if (self::$logger === null) {
             self::$logger = new Logger('leads_logger');
