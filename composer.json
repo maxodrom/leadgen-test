@@ -10,6 +10,12 @@
     }
   ],
   "require": {
-    "vladimir163/lead-generator": "dev-master"
+    "vladimir163/lead-generator": "dev-master",
+    "monolog/monolog": "^2.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "maxodrom\\leadgentest\\": "src/"
+    }
   }
 }
