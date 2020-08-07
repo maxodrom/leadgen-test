@@ -33,7 +33,7 @@ class Handler
     /**
      * @param string $logFile
      */
-    public static function setLogFile(string $logFile)
+    public static function setLogFile(string $logFile): void
     {
         self::$logFile = $logFile;
     }
@@ -41,7 +41,7 @@ class Handler
     /**
      * Initialization work.
      */
-    private static function init()
+    private static function init(): void
     {
         $appRoot = dirname(__DIR__);
         if (self::$logFile === null) {
